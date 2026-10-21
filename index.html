@@ -1,13 +1,15 @@
 <script>
   (function() {
-    var password = ""12377""; // Clean password here
-    var input = """";
+    var password = "12377"; // Change this to your password
+    var input = "";
     
+    // Keep asking until they enter the correct password
     while (input !== password) {
-      input = prompt(""Please enter the password to view this design:"");
+      input = prompt("Please enter the password to view this design:");
       
+      // If they click 'Cancel', redirect them away so they can't see the page
       if (input === null) {
-        window.location.href = ""https://google.com""; 
+        window.location.href = "https://google.com"; 
         return; 
       }
     }
